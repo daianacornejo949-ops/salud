@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salud</title>
+  
+</head>
+<body>
+
+<h1>Ejercicios de Salud</h1>
+
+<section>
+  <h3>Presión Arterial</h3>
+  <input id="sis" type="number" placeholder="Sistólica">
+  <input id="dia" type="number" placeholder="Diastólica">
+  <button onclick="presion()">Ver</button>
+  <div id="resPresion"></div>
+</section>
+
+<section>
+  <h3>Temperaturas</h3>
+  <input id="cantTemp" type="number" placeholder="N° pacientes">
+  <input id="listaTemp" placeholder="Ej: 36,37,38">
+  <button onclick="promTemp()">Calcular</button>
+  <div id="resTemp"></div>
+</section>
+
+<section>
+  <h3>Fiebre</h3>
+  <input id="listaFiebre" placeholder="Ej: 37,38,40,0">
+  <button onclick="contarFiebre()">Contar</button>
+  <div id="resFiebre"></div>
+</section>
+
+<section>
+  <h3>TRIAGE</h3>
+  <input id="codTriage" type="number" placeholder="1-4">
+  <button onclick="triage()">Ver</button>
+  <div id="resTriage"></div>
+</section>
+<section>
+  <h3>Saturación SpO2</h3>
+  <button onclick="spo()">Medir</button>
+  <div id="resSpo"></div>
+</section>
+
+<script src="salud.js"></script>
+</body>
+</html>
